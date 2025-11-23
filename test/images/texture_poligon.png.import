@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dx02j4gbjbx4n"
-path.s3tc="res://.godot/imported/texture_platform.png-1b2ff1abdea685f932f7cb06aade1a39.s3tc.ctex"
+uid="uid://bjy1c0nihjlsn"
+path.s3tc="res://.godot/imported/texture_poligon.png-3b656faacfeb8d9beb1a7437386aa5f6.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://images/texture_platform.png"
-dest_files=["res://.godot/imported/texture_platform.png-1b2ff1abdea685f932f7cb06aade1a39.s3tc.ctex"]
+source_file="res://images/texture_poligon.png"
+dest_files=["res://.godot/imported/texture_poligon.png-3b656faacfeb8d9beb1a7437386aa5f6.s3tc.ctex"]
 
 [params]
 

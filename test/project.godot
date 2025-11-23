@@ -12,7 +12,7 @@ config_version=5
 
 config/name="test"
 run/main_scene="uid://0xybipw5y3dm"
-config/features=PackedStringArray("4.4", "Forward Plus")
+config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
 
 [display]

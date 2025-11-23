@@ -38,8 +38,6 @@ func _physics_process(delta):
 	# Применяем гравитацию
 	if not is_on_floor():
 		velocity.y -= gravity * delta
-	if is_on_floor():
-		velocity.y -= gravity * delta
 		
 	#логика прыжка
 	if is_on_floor() and Input.is_action_just_pressed("jump"):
