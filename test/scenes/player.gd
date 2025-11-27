@@ -38,6 +38,8 @@ var t_bob: float = 0.0
 @onready var neck = $CameraPivot 
 @onready var camera = $CameraPivot/Camera3D
 @onready var collision_shape = $CollisionShape3D
+@onready var weapon_pivot = $CameraPivot/WeaponPivot
+
 
 # Гравитация из настроек проекта
 var gravity: float = ProjectSettings.get_setting("physics/3d/default_gravity")
@@ -51,6 +53,20 @@ func _ready():
 	original_camera_position = camera.position
 	original_neck_position = neck.position
 	original_neck_rotation = neck.rotation_degrees.x
+	
+	# Загружаем оружие
+	_load_weapon()
+
+func _load_weapon():
+	# Загружаем сцену дробовика
+	var shotgun_scene = load("res://scenes/weapons/shotgun.tscn")
+	var shotgun_instance = shotgun_scene.instantiate()
+	
+	# Добавляем дробовик к игроку
+	weapon_pivot.add_child(shotgun_instance)
+	
+	# Настраиваем позицию дробовика
+	shotgun_instance.position = Vector3(0.5, -2, -0.5)
 
 func _input(event):
 	if event is InputEventMouseMotion and Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:     

@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://db5w4vxmsf1n6"]
+
+[ext_resource type="ArrayMesh" uid="uid://bxoguk3ihd1ep" path="res://models/weapons/shotgun.obj" id="1_lbead"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_lbead")
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
